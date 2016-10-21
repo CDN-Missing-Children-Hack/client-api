@@ -25,7 +25,7 @@ router.get('/', function (req, res) {
 			id: i,
 			content: 'This was my tweet #help. ' + i,
 			handle: '@thedude',
-			social: 'twitter',
+			social: 1,
 			profilepic: 'https://avatars0.githubusercontent.com/u/1208574?v=3&s=466',
 			photos: ['https://tse3.mm.bing.net/th?id=OIP.Mda2551d47b8ae00fa7beb583bff53236o0&pid=15.1'
 				, 'http://images.clipartpanda.com/hair-clipart-Woman-With-Flowing-Hair.png'
@@ -49,7 +49,7 @@ router.get('/:id', function (req, res) {
 		id: id,
 		content: 'This was my tweet #help.',
 		handle: '@thedude',
-		social: 'twitter',
+		social: 1,
 		sentiment: 0.891234,
 		profilepic: 'https://avatars0.githubusercontent.com/u/1208574?v=3&s=466',
 		photos: ['https://tse3.mm.bing.net/th?id=OIP.Mda2551d47b8ae00fa7beb583bff53236o0&pid=15.1'
