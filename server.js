@@ -27,6 +27,12 @@ router.get('/', function (req, res) {
 			handle: '@thedude',
 			social: 'twitter',
 			profilepic: 'https://avatars0.githubusercontent.com/u/1208574?v=3&s=466',
+			photos: ['https://tse3.mm.bing.net/th?id=OIP.Mda2551d47b8ae00fa7beb583bff53236o0&pid=15.1'
+				, 'http://images.clipartpanda.com/hair-clipart-Woman-With-Flowing-Hair.png'
+				, 'http://www.clipartlord.com/wp-content/uploads/2016/03/koala14.png'
+				, 'http://www.clipartlord.com/wp-content/uploads/2015/08/apple21.png'
+				, 'https://tse1.mm.bing.net/th?id=OIP.Mf9d07dbbfbb1fa77692c9df6f09226a5o0&w=117&h=138&c=7&rs=1&qlt=90&o=4&pid=1.1'
+			]
 		};
 	}
 
@@ -46,6 +52,12 @@ router.get('/:id', function (req, res) {
 		social: 'twitter',
 		sentiment: 0.891234,
 		profilepic: 'https://avatars0.githubusercontent.com/u/1208574?v=3&s=466',
+		photos: ['https://tse3.mm.bing.net/th?id=OIP.Mda2551d47b8ae00fa7beb583bff53236o0&pid=15.1'
+			, 'http://images.clipartpanda.com/hair-clipart-Woman-With-Flowing-Hair.png'
+			, 'http://www.clipartlord.com/wp-content/uploads/2016/03/koala14.png'
+			, 'http://www.clipartlord.com/wp-content/uploads/2015/08/apple21.png'
+			, 'https://tse1.mm.bing.net/th?id=OIP.Mf9d07dbbfbb1fa77692c9df6f09226a5o0&w=117&h=138&c=7&rs=1&qlt=90&o=4&pid=1.1'
+		]
 	};
 
 	res.jsonp(mock);
