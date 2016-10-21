@@ -1,0 +1,9 @@
+{
+  "name": "client-api",
+  "version": "0.0.0",
+  "dependencies": {
+    "body-parser": "~1.0.2",
+    "express": "~4.14.0",
+    "applicationinsights": "~0.15.19"
+  }
+}
