@@ -1,6 +1,7 @@
 var express = require('express');
 var bodyParser = require("body-parser");
 var appInsights = require("applicationinsights");
+var DocumentDBClient = require('documentdb').DocumentClient;
 
 appInsights.setup("XXXXXXXXXXXXXXXXXXXX").start();
 
