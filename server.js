@@ -24,6 +24,7 @@ router.get('/', function (req, res) {
 			long: -114.057198,
 			id: i,
 			content: 'This was my tweet #help. ' + i,
+			handle: '@thedude',
 			social: 'twitter',
 			profilepic: 'https://avatars0.githubusercontent.com/u/1208574?v=3&s=466',
 		};
@@ -41,6 +42,7 @@ router.get('/:id', function (req, res) {
 		long: -114.057198,
 		id: id,
 		content: 'This was my tweet #help.',
+		handle: '@thedude',
 		social: 'twitter',
 		sentiment: 0.891234,
 		profilepic: 'https://avatars0.githubusercontent.com/u/1208574?v=3&s=466',
