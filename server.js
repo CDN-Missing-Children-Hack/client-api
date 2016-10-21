@@ -41,6 +41,7 @@ router.get('/:id', function (req, res) {
 		id: id,
 		content: 'This was my tweet #help.',
 		social: 'twitter',
+		sentiment: 0.891234,
 		profilepic: 'https://avatars0.githubusercontent.com/u/1208574?v=3&s=466',
 	};
 
