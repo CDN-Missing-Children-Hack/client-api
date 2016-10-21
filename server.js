@@ -15,17 +15,22 @@ var router = express.Router();
 
 router.get('/', function (req, res) {
 
-	var mock = {
-		lat: 51.045091,
-		long: -114.057198,
-		id: 123,
-		content: 'This was my tweet #help.',
-		social: 'twitter',
-		profilepic: 'https://avatars0.githubusercontent.com/u/1208574?v=3&s=466',
-	};
+	var mocks = [10];
 
-	res.jsonp(mock);
+	for (var i = 0; i < 10; i++) {
+		mocks[i] = {
+			lat: 51.045091,
+			long: -114.057198,
+			id: i,
+			content: 'This was my tweet #help. ' + i,
+			social: 'twitter',
+			profilepic: 'https://avatars0.githubusercontent.com/u/1208574?v=3&s=466',
+		};
+	}
+
+	res.jsonp(mocks);
 });
+
 router.get('/:id', function (req, res) {
 
 	var id = parseInt(req.params.id);
