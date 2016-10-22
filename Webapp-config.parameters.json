@@ -13,9 +13,6 @@
         },
         "AUTH_KEY": {
             "value": ""
-        },
-        "WEBSITE_NODE_DEFAULT_VERSION": {
-            "value": "4.4.7"
         }
     }
 }
