@@ -6,10 +6,13 @@
             "value": "mcsc-authorization-dev"
         },
         "DOC_DB": {
+            "value": ""
         },
         "APP_INSIGHTS_KEY": {
+            "value": ""
         },
         "AUTH_KEY": {
+            "value": ""
         }
     }
 }
