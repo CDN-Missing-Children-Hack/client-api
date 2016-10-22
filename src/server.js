@@ -8,7 +8,6 @@ var controller = require('../src/controllers/case_controller');
 var config = require('./config');
 appInsights.setup(config.appInsightsKey).start();
 
-
 var app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
