@@ -14,10 +14,6 @@
         },
         "AUTH_KEY": {
             "type": "string"
-        },
-        "WEBSITE_NODE_DEFAULT_VERSION": {
-            "type": "string",
-            "defaultValue": "4.4.7"
         }
     },
     "variables": {},
