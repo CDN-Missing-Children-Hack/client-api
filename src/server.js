@@ -5,7 +5,9 @@ var DocumentDBClient = require('documentdb').DocumentClient;
 var controller = require('../src/controllers/case_controller');
 
 //Connect Application Insights
-appInsights.setup("XXXXXXXXXXXXXXXXXXXX").start();
+var config = require('./config');
+appInsights.setup(config.appInsightsKey).start();
+
 
 var app = express();
 
@@ -13,7 +15,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 //Set listening port
-var expressPort = process.env.PORT || 8080;
+var expressPort = process.env.PORT || 80;
 
 var router = express.Router();
 
