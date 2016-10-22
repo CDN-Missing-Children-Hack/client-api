@@ -2,15 +2,16 @@ var express = require('express');
 var bodyParser = require("body-parser");
 var appInsights = require("applicationinsights");
 var DocumentDBClient = require('documentdb').DocumentClient;
+var config = require('./config');
 
-appInsights.setup("XXXXXXXXXXXXXXXXXXXX").start();
+appInsights.setup(config.appInsightsKey).start();
 
 var app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-var expressPort = process.env.PORT || 8080;
+var expressPort = process.env.PORT || 80;
 
 var router = express.Router();
 
