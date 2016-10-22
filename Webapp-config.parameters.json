@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "sites_MCSC_Authorization_name": {
-            "value": "mcsc-authorization-dev"
+            "value": "mcsc-clientapi-dev"
         },
         "DOC_DB": {
             "value": ""

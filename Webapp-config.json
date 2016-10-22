@@ -4,7 +4,7 @@
     "parameters": {
         "sites_MCSC_Authorization_name": {
             "type": "string",
-            "defaultValue": "mcsc-authorization-dev"
+            "defaultValue": "mcsc-clientapi-dev"
         },
         "DOC_DB": {
             "type": "string"
