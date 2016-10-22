@@ -14,7 +14,7 @@
         },
         "AUTH_KEY": {
             "type": "string"
-        },
+        }
     },
     "variables": {},
     "resources": [
