@@ -14,6 +14,10 @@
         },
         "AUTH_KEY": {
             "type": "string"
+        },
+        "WEBSITE_NODE_DEFAULT_VERSION": {
+            "type": "string",
+            "defaultValue": "4.4.7"
         }
     },
     "variables": {},
@@ -39,6 +43,10 @@
                         {
                             "Name": "APP_INSIGHTS_KEY",
                             "Value": "[parameters('APP_INSIGHTS_KEY')]"
+                        },
+                        {
+                            "Name": "WEBSITE_NODE_DEFAULT_VERSION",
+                            "Value": "4.4.7"
                         }
                     ]
                 }
