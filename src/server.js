@@ -2,10 +2,10 @@ var express = require('express');
 var bodyParser = require("body-parser");
 var appInsights = require("applicationinsights");
 var DocumentDBClient = require('documentdb').DocumentClient;
-var controller = require('../src/controllers/case_controller');
+var config = require('./config');
+var controller = require('./controllers/case_controller');
 
 //Connect Application Insights
-var config = require('./config');
 appInsights.setup(config.appInsightsKey).start();
 
 var app = express();
