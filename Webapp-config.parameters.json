@@ -4,6 +4,12 @@
     "parameters": {
         "sites_MCSC_Authorization_name": {
             "value": "mcsc-authorization-dev"
+        },
+        "DOC_DB": {
+        },
+        "APP_INSIGHTS_KEY": {
+        },
+        "AUTH_KEY": {
         }
     }
 }
