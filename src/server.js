@@ -2,8 +2,8 @@ var express = require('express');
 var bodyParser = require("body-parser");
 var appInsights = require("applicationinsights");
 var DocumentDBClient = require('documentdb').DocumentClient;
-var caseController = require('../src/controllers/case_controller');
-var userController = require('../src/controllers/user_controller');
+var caseController = require('./controllers/case_controller');
+var userController = require('./controllers/user_controller');
 //Connect Application Insights
 var config = require('./config');
 appInsights.setup("config.appInsightsKey").start();
