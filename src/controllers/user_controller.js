@@ -2,7 +2,7 @@
 var uuid = require('uuid');
 var user = require('../models/user_model');
 
-user.username = 'admin';
+user.username = 'Admin';
 user.password = 'password';
 user.firstname = 'Bob';
 user.lastname = 'Brady';
