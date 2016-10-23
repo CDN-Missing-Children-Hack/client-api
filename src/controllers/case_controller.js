@@ -11,7 +11,7 @@ exports.getAllCases = function (req, res) {
 
 	var temp = docdbUtils.getDocuments(docDbClient, config.collLink, config.collectionid, function (err, results){
 		if (err) {
-        //appInsights.client.trackException(err);
+        appInsights.client.trackException(err);
 		res.json(err);
       }
 		
