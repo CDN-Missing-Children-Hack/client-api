@@ -11,4 +11,7 @@ config.collLink = 'dbs/' + config.databaseId + '/colls/' + config.collectionId;
 //Telemitry
 config.appInsightsKey = process.env.APP_INSIGHTS_KEY;
 
+//For local debug
+config.localkey = 'xxxxxxxxxxx';
+
 module.exports = config;

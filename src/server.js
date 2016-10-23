@@ -2,12 +2,12 @@ var express = require('express');
 var bodyParser = require("body-parser");
 var appInsights = require("applicationinsights");
 var DocumentDBClient = require('documentdb').DocumentClient;
-var controller = require('../src/controllers/case_controller');
-
+var caseController = require('../src/controllers/case_controller');
+var userController = require('../src/controllers/user_controller');
 //Connect Application Insights
 var config = require('./config');
-appInsights.setup(config.appInsightsKey).start();
-
+appInsights.setup("config.appInsightsKey").start();
+//appInsights.setup("config.localkey").start();
 
 var app = express();
 
@@ -21,9 +21,12 @@ var router = express.Router();
 
 //Setup and link api endpoints
 router.route('/cases')
-	.get(controller.getAllCases);
+	.get(caseController.getAllCases);
 router.route('/cases/:id')
-	.get(controller.getCase);
+	.get(caseController.getCase);
+
+router.route('/login')
+	.post(userController.postLogin);
 
 app.use('/api', router);
 
