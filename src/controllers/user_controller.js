@@ -1,20 +1,13 @@
 // Load required packages
 var uuid = require('uuid');
-//var User = require('./models/user');
-
-var user = ({
-    username: String,
-    password: String,
-    lastname: String,
-    firstname: String,
-    token: String
-});
+var user = require('../models/user_model');
 
 user.username = 'admin';
 user.password = 'password';
 user.firstname = 'Bob';
 user.lastname = 'Brady';
 user.token = uuid.v1();
+
 // Create endpoint /api/login for POST
 exports.postLogin = function(req, res) {
     if(req.body.username == user.username &&
