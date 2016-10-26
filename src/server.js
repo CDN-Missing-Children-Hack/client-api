@@ -26,6 +26,9 @@ router.route('/cases')
 router.route('/cases/:id')
 	.get(caseController.getCase);
 
+router.route('/twitter-profiles')
+	.get(caseController.getAllProfiles);
+
 router.route('/login')
 	.post(userController.postLogin);
 
