@@ -2,8 +2,8 @@ var DocumentDBClient = require('documentdb').DocumentClient;
 //Connect Application Insights
 var config = require('../config');
 
-//var docDbClient = new DocumentDBClient(config.host, {masterKey: config.authKey});
-var docDbClient = new DocumentDBClient("https://missingchildrendata.documents.azure.com:443/", {masterKey: 'agHqTdTA7xaIlSEnaVU63O0sFCnrSZuZHYcBLLoUgeyPCYC5qYSSFca7eMGbqRFmPaAPeaakJmMxYSy0OvxHog=='});
+var docDbClient = new DocumentDBClient(config.host, {masterKey: config.authKey});
+
 var docdbUtils = require('../docdb_utils');
 
 //Create enpoint /api/cases/ for GET
